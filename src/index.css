@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "NeverMind-Regular";
+  src: url("./assets/fonts/NeverMindCompact-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
