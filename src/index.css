@@ -1,8 +1,29 @@
 @import "tailwindcss";
 
-@font-face {
-  font-family: "NeverMind-Regular";
-  src: url("./assets/fonts/NeverMindCompact-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --color-primary: #37353c;
+  --color-secondary: #fefefe;
+}
+
+@layer base {
+  @font-face {
+    font-family: "NewMexika";
+    src: url("./assets/fonts/new-mexika.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  html,
+  body {
+    @apply text-[var(--color-primary)];
+  }
+
+  * {
+    @apply bg-[var(--color-secondary)];
+  }
+}
+
+/* --color-primary: #525259; */
+@theme {
+  --default-font-family: "NewMexika";
 }
